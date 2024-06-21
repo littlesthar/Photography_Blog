@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fotoblog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Cardo:ital,wght@0,400;0,700;1,400&family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style(albuns).css">
+</head>
+
+
+<body>
+  <div id="app">
+    <header class="container">
+      <nav>
+        <img class="logo" src="./assets/logo.png" alt="Imagem da logomarca">
+        <ul>
+          <li class="Home">Home</li>
+          <li class="Contatos">Contatos</li>
+          <li class="Álbuns">Álbuns</li>
+          <li class="Sobre_mim">Sobre mim</li>
+        </ul>
+      </nav>
+      <div class="input-wrapper">
+          <input id="search" type="text" placeholder="Pesquise por imagens e coleções">
+          <img class="lupa-svg" src="./assets/lupa.png" alt="lupa SVG">
+      </div>
+    </header>
+
+    
+    <main>
+        <div class="row">
+            <div class="img-container">
+                <img class="arthur" src="./assets/galeria(arthur).jpg" alt="Imagem 1" data-name="Nome da Imagem 1">
+                <div class="arthur" data-name="Desportivo"></div>
+            </div>
+            <div class="img-container">
+                <img class="dudu" src="./assets/galeria(dudu).jpg" alt="Imagem 2" data-name="Nome da Imagem 2">
+                <div class="dudu" data-name="Festa Infantil"></div>
+            </div>
+            <div class="img-container">
+                <img class="jhecy" src="./assets/galeria(jhecy).jpg" alt="Imagem 3" data-name="Nome da Imagem 3">
+                <div class="jhecy" data-name="Ensaio Pet"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-container">
+                <img class="cardoso" src="./assets/galeria(cardoso).jpg" alt="Imagem 4" data-name="Nome da Imagem 4">
+                <div class="cardoso" data-name="Ensaio Pessoal"></div>
+            </div>
+            <div class="img-container">
+                <img class="aniversario" src="./assets/galeria(15anos).jpg" alt="Imagem 5" data-name="Nome da Imagem 5">
+                <div class="aniversario" data-name="15 anos"></div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="container">
+      <text>@Fotógrafa thFernandes</text>
+    </footer>
+  </div>
+  <script src="albuns.js"></script>
+</body>
+</html>

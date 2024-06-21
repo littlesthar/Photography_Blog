@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* cores base */
+  :root {
+    font-size: 62.5%;
+  
+    --hue: 100;
+    --color-base-white: #B58BCF;
+    --color-base-gray-100: #D5B8E1;
+    --color-base-gray-300: #ffffff;
+    --color-base-gray-500: #000000;
+    --color-base-gray-900: #ffffff;
+  }
+  
+  /* Fontes */
+  html,
+  body,
+  input {
+    font-family: "Cardo", "Capriola", "Yusei Magic";
+  }
+  
+  /* Body */
+  body {
+    font-size: 1.6rem;
+    background-color: var(--color-base-white);
+    color: var(--color-base-gray-900);
+  }
+  
+  #app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+  }
+  
+  /* General Container */
+  .container {
+    padding: 1.2rem 3.2rem;
+    height: 5.9375rem;
+    margin: auto;
+  }
+  
+  /* Main Content */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-base-gray-100);
+    box-sizing: border-box;
+  }
+
+  /* Header and Navigation */
+  header,
+  nav,
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 7.2rem;
+  }
+  
+  header form {
+    flex: 1;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0; /* Removendo margem padrão */
+    padding: 0; /* Removendo padding padrão */
+    text-align: center; /* Centralizando horizontalmente */
+  }
+  
+  ul li.Home {
+    color: #FFF;
+    font-family: "Capriola", sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  ul li.Contatos {
+    color: #FFF;
+    font-family: "Capriola", sans-serif; /* Adicionando fallback para fontes que não suportam "Capriola" */
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: inline-block;
+    margin: 0 10px; /* Ajuste opcional para espaçamento entre os itens */
+    cursor: pointer;
+  }
+  
+  ul li.Álbuns {
+    color: #FFF;
+    font-family: "Capriola", sans-serif; /* Adicionando fallback para fontes que não suportam "Capriola" */
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: inline-block;
+    margin: 0 10px; /* Ajuste opcional para espaçamento entre os itens */
+    cursor: pointer;
+  }
+  
+  ul li.Sobre_mim {
+    color: #FFF;
+    font-family: "Capriola", sans-serif; /* Adicionando fallback para fontes que não suportam "Capriola" */
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: inline-block;
+    margin: 0 20px; /* Ajuste opcional para espaçamento entre os itens */
+    cursor: pointer;
+  }
+  
+  ul li:last-child {
+    margin-right: 0; /* Removendo margem à direita do último item */
+  }
+  
+  .input-wrapper input {
+    width: 550px;
+    height: 25px;
+    padding: 1.6rem;
+    position: relative;
+    left: 15rem;
+    background-color: var(--color-base-gray-100);
+    border: 0;
+    border-radius: 25px;
+    font-size: 26px; /* texto da barra de pesquisa */
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.62);
+    font-family: Cardo;
+    text-align: center;
+  }
+  
+  .input-wrapper input::placeholder {
+    opacity: 0.60;
+    color: var(--color-base-gray-500);
+  }
+  
+  /* barra baixo */
+  footer text {
+    color: #FFF;
+    font-family: "Capriola", sans-serif;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 9rem;
+  }
+  
+  .lupa-svg {
+    width: 25px;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: 690px;
+    top: 30px;
+    opacity: 0.60;
+  }
+
+  .caixa-de-texto {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius:  0.625rem;
+    font-family: "Capriola";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 438px;
+    top: 125px;
+    box-shadow: 10px 10px 2px #8C6996;
+
+  }
+
+  .maintext1 {
+    color: #000;
+    font-family: "Yusei Magic";
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 48rem;
+    height: 42.8125rem;
+    flex-shrink: 0;
+    line-height: 1.7;
+    position: absolute;
+    top: 220px;
+    left: 350px;
+  }
+
+  .foto-container {
+    display: inline-block;
+    background-color:  rgba(251, 249, 249, 0.70);/* Cor do fundo do contêiner */
+    padding: 20px;
+    border: 2px dashed #000000; /* Borda pontilhada */
+    position: absolute;
+    width: 48rem;
+    height: 58rem;
+    flex-shrink: 0;
+    border-radius: 10px;
+    right: 190px;
+    top: 158px;
+
+}
+
+.foto-esther {
+    display: block;
+    width: 46rem;
+    height: 58rem;
+    flex-shrink: 0;
+    border-radius: 5px;
+    position: absolute;
+    right: 28px;
+
+}
+

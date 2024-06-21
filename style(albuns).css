@@ -1,0 +1,242 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Definição das cores base */
+:root {
+  font-size: 62.5%; /* Define 1rem como 10px para facilitar cálculos */
+  --hue: 100;
+  --color-base-white: #B58BCF;
+  --color-base-gray-100: #D5B8E1;
+  --color-base-gray-300: #ffffff;
+  --color-base-gray-500: #000000;
+  --color-base-gray-900: #ffffff;
+}
+
+/* Fontes */
+html,
+body,
+input {
+  font-family: "Cardo", "Capriola", "Yusei Magic";
+}
+
+/* Corpo */
+body {
+  font-size: 1.6rem; /* Equivalente a 16px */
+  background-color: var(--color-base-white);
+  color: var(--color-base-gray-900);
+}
+
+/* Estrutura principal */
+#app {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+}
+
+/* Container geral */
+.container {
+  padding: 1.2rem 3.2rem;
+  height: 5.9375rem; /* Ajuste de altura */
+  margin: auto;
+}
+
+/* Conteúdo principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--color-base-gray-100);
+  box-sizing: border-box;
+}
+
+/* Cabeçalho e Navegação */
+header,
+nav,
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 7.2rem; /* Espaçamento entre os itens */
+}
+
+header form {
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul li.Home {
+  color: #FFF;
+  font-family: "Capriola", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+ul li.Contatos {
+  color: #FFF;
+  font-family: "Capriola", sans-serif; /* Adicionando fallback para fontes que não suportam "Capriola" */
+  font-style: normal;
+  font-size: 21px;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: inline-block;
+  margin: 0 10px; /* Ajuste opcional para espaçamento entre os itens */
+  cursor: pointer;
+}
+
+ul li.Álbuns {
+  color: #FFF;
+  font-family: "Capriola", sans-serif; /* Adicionando fallback para fontes que não suportam "Capriola" */
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: inline-block;
+  margin: 0 10px; /* Ajuste opcional para espaçamento entre os itens */
+  cursor: pointer;
+}
+
+ul li.Sobre_mim {
+  color: #FFF;
+  font-family: "Capriola", sans-serif; /* Adicionando fallback para fontes que não suportam "Capriola" */
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: inline-block;
+  margin: 0 20px; /* Ajuste opcional para espaçamento entre os itens */
+  cursor: pointer;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+/* Barra de pesquisa */
+.input-wrapper input {
+  width: 550px; /* Largura do input */
+  height: 25px;
+  padding: 1.6rem; /* Espaçamento interno */
+  position: relative;
+  left: 15rem; /* Ajuste de posição */
+  background-color: var(--color-base-gray-100);
+  border: 0;
+  border-radius: 25px;
+  font-size: 26px; /* Tamanho de fonte */
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.62); /* Cor do texto */
+  font-family: Cardo;
+  text-align: center;
+}
+
+.input-wrapper input::placeholder {
+  opacity: 0.60;
+  color: var(--color-base-gray-500);
+}
+
+/* Rodapé */
+footer text {
+  color: #FFF;
+  font-family: "Capriola", sans-serif;
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Logo */
+.logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 9rem;
+}
+
+/* Ícone da lupa */
+.lupa-svg {
+  width: 25px;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 690px;
+  top: 30px;
+  opacity: 0.60;
+}
+
+/* Imagens */
+.arthur,
+.dudu,
+.jhecy,
+.cardoso,
+.aniversario {
+  width: 35rem;
+  height: 25rem;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 10px 10px 2px #8C6996;
+}
+
+.arthur { left: 350px; top: 200px; }
+.dudu { left: 780px; top: 200px; }
+.jhecy { right: 350px; top: 200px; }
+.cardoso { left: 580px; bottom: 180px; }
+.aniversario { right: 550px; bottom: 180px; }
+
+@keyframes showImageName {
+  from {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-20px); /* Deslocamento para cima */
+  }
+  to {
+    opacity: 1; /* Fica visível */
+    transform: translateY(0); /* Sem deslocamento */
+  }
+}
+
+/* Texto que aparece ao passar o mouse */
+.arthur:hover::before,
+.dudu:hover::before,
+.jhecy:hover::before,
+.cardoso:hover::before,
+.aniversario:hover::before {
+  content: attr(data-name);
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  background-color: rgba(251, 249, 249, 0.94);
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  border-radius: 10px;
+  animation: showImageName 0.3s forwards; /* Adiciona a animação */
+  
+  /* Estilos específicos para o texto */
+  font-family: "Capriola";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  width: 33rem;
+  height: 12rem;
+  text-align: center;
+}
+

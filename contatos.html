@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fotoblog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Cardo:ital,wght@0,400;0,700;1,400&family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style(contatos).css">
+</head>
+
+
+<body>
+  <div id="app">
+    <header class="container">
+      <nav>
+        <img class="logo" src="./assets/logo.png" alt="Imagem da logomarca">
+        <ul>
+          <li class="Home">Home</li>
+          <li class="Contatos">Contatos</li>
+          <li class="Álbuns">Álbuns</li>
+          <li class="Sobre_mim">Sobre mim</li>
+        </ul>
+      </nav>
+      <div class="input-wrapper">
+        <input id="search" type="text" placeholder="Pesquise por imagens e coleções">
+        <img class="lupa-svg" src="./assets/lupa.png" alt="lupa SVG" id="search-button">
+    </div>
+    </header>
+
+    
+    <main>
+        <p class="maintext1">E-mail:</p>
+        <p class="maintext2">fotografa.thfernandes@gmail.com</p>
+        <p class="maintext3">Localização:</p>
+        <p class="maintext4">Guarulhos - SP</p>
+        <p class="maintext5">Horário de atendimento:</p>
+        <p class="maintext6">Segunda a Sexta - 9h às 19h</p>
+        <p class="maintext7">Sábado - 9h às 13h</p>
+
+        <div class="svg-container">
+            <div class="svg-1"><img src="./assets/icone carta.svg" alt="carta"></div>
+            <div class="svg-2"><img src="./assets/icone localizacao.svg" alt="localizacao"></div>
+            <div class="svg-3"><img src="./assets/icone relogio.svg" alt="relogio"></div>
+            <div class="svg-4"><img src="./assets/icone instagram.svg" alt="instagram"></div>
+            <div class="svg-5"><img src="./assets/icone linkedin.svg" alt="linkedin"></div>
+          </div>
+        
+        <section>
+            <h2>Entre em contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome*</label>
+                <input type="text" name="name" placeholder="Coloque seu nome aqui" autocomplete="off" required>
+                <label>Email*</label>
+                <input type="email" name="email" placeholder="Coloque seu e-mail aqui" autocomplete="off" required>
+                <label>WhatsApp*</label>
+                <input type="nunber" name="name" placeholder="Coloque seu nome aqui" autocomplete="off" required>
+                <label>Mensagem*</label>
+                <textarea name="message" cols="30" rows="10" placeholder="" required></textarea>
+                <button type="submit">Enviar</button>
+    
+                <input type="hidden" name="accessKey" value="049cfa47-9d34-4f0b-82d9-aee418c3111c">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+            </form>
+        </section>
+    </main>
+
+    
+    <footer class="container">
+      <text>@Fotógrafa thFernandes</text>
+    </footer>
+  </div>
+  <script src="contatos.js"></script>
+</body>
+</html>
